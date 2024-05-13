@@ -21,7 +21,7 @@ export default {
         target: 0,
         guess: null,
         message: '',
-        attempts: 0,
+        attempts: 3,
         gameOver: false
       };
     },
