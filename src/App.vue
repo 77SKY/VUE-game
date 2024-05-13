@@ -21,7 +21,7 @@ export default {
         target: 0,
         guess: null,
         message: '',
-        attempts: 3,
+        attempts: 0,
         gameOver: false
       };
     },
@@ -57,6 +57,7 @@ export default {
 <style>
 #app {
     font-family: Arial, sans-serif;
+  color:green;
     text-align: center;
     margin-top: 50px;
   }
