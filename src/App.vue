@@ -64,41 +64,6 @@ export default {
 
 <style>
 #app {
-  font-family: Arial, sans-serif;
-  color: rgb(128, 0, 100);
-  text-align: center;
-  margin-top: 50px;
-  background-color: blue;
-}
-</style>
-
-        this.gameOver = false;
-      },
-      checkGuess() {
-        this.attempts++;
-        if (this.guess < this.target) {
-          this.message = 'Too low!';
-        } else if (this.guess > this.target) {
-          this.message = 'Too high!';
-        } else {
-          this.message = `Congratulations! You guessed the number ${this.target} in ${this.attempts} attempts.`;
-          this.gameOver = true;
-        }
-      },
-      resetGame() {
-        this.startGame();
-        this.guess = null;
-        this.message = '';
-      }
-    },
-    mounted() {
-      this.startGame();
-    }
-  };
-</script>
-
-<style>
-#app {
     font-family: Arial, sans-serif;
   color:green;
     text-align: center;
